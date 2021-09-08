@@ -1,3 +1,4 @@
+
 const button = document.querySelector("button");
 const authorSpan = document.querySelector(".author");
 const imgDiv = document.querySelector(".image-container");
@@ -28,6 +29,16 @@ const displayImage = function (randomImage) {
   button.addEventListener("click", function () {
     getImage();
 });
+
+
+const getData = async function () {
+    const userRequest =  await fetch ("https://randomuser.me/api?results=5");
+    const data = await res.json();
+
+    console.log(getData);
+    //const userResults = 
+}
+
 
 
 
